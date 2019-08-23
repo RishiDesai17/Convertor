@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Questrial|Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg title">
+    <h1>Convertor</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="padding-left: 1100px;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Temperature
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="dist.html">Distance</a>
+            <a class="dropdown-item" href="energy.html">Energy</a>
+            <a class="dropdown-item" href="length.html">Length</a>
+            <a class="dropdown-item" href="weight.html">Weight</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="topicbox">
+    <p class="topic">Temperature🌡️</p>
+  </div>
+  <div class="container" style="margin-left: 110px;">
+    <table>
+      <tr>
+        <td>
+          <div class="box">
+            <input id="celsius" type="number" placeholder="Celsius" oninput="converter(this.id, this.value)" onchange="converter(this.id, this.value)">
+          </div>
+        </td>
+        <td>
+          <div class="box">
+            <input id="fahrenheit" type="number" placeholder="Fahrenheit" oninput="converter(this.id, this.value)" onchange="converter(this.id, this.value)">
+          </div>
+        </td>
+        <td>
+          <div class="box">
+            <input id="kelvin" type="number" placeholder="Kelvin" oninput="converter(this.id, this.value)" onchange="converter(this.id, this.value)">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
